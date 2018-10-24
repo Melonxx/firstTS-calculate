@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>calc</title>
+  <style>
+    :root{
+      --em3: 3em;
+    }
+    .calc-wrap {
+      display: inline-block;
+    }
+    .top-screen {
+      height: 6rem;
+      line-height: 6rem;
+      background: rgb(42,40,42);
+      text-align: right;
+      color: #fff;
+      font-size: 4.4em;
+      padding-right: 1rem;
+      border-top: 1.2rem solid rgb(42,40,42);
+    }
+    .button {
+      height: var(--em3);
+      width: var(--em3);
+    }
+    .button.button-Clear {
+      width: 9em;
+    }
+    .button.button-0 {
+      width: 6em;
+    }
+    .button-bar .button {
+      background: rgb(226,224,226);
+      background: linear-gradient(rgb(245,240,245), rgb(226,224,226));
+      border-color: rgb(226,224,226);
+      font-weight: bold;
+      font-size: 40px;
+    }
+    .button-bar .button:last-child {
+      background: rgb(255,151,58);
+      background: linear-gradient(rgb(247,167,96), rgb(255,151,58));
+      border-color: rgb(255,151,58);
+      border-image: rgb(255,151,58);
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <script src="1.js"></script>
+</body>
+</html>
