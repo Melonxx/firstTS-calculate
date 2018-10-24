@@ -164,7 +164,7 @@
                 result = Number(this.n1) / Number(this.n2);
             this.top.textContent = this.result = result.toString();
             if (result.toString().length > 9) {
-                this.top.textContent = this.result = result.toPrecision(9).toString().replace(/0+$/, '');
+                this.top.textContent = this.result = result.toPrecision(9).toString().replace(/0+$/, '').replace(/\.$/,'');
             }
             if (this.n2 === '0')
                 this.top.textContent = '不是数字';
